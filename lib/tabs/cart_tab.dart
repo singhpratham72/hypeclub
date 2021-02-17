@@ -1,7 +1,6 @@
 import 'package:aponline/models/order.dart';
 import 'package:aponline/screens/checkout_screen.dart';
 import 'package:aponline/screens/product_screen.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:aponline/models/user.dart';

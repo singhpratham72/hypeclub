@@ -72,6 +72,16 @@ class DatabaseService {
     });
   }
 
+  Future<void> addDesc() async {
+    QuerySnapshot products = await productsRef.get();
+    products.docs.forEach((product) {
+      String description =
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.';
+      productsRef.doc(product.id).update({'desc': description});
+      print('Done');
+    });
+  }
+
   Future<DocumentReference> addProduct() async {
     List images = [
       'https://assets.ajio.com/medias/sys_master/root/20201030/KpdZ/5f9c2e61f997dd8c837fd59d/-473Wx593H-460757243-navy-MODEL.jpg',

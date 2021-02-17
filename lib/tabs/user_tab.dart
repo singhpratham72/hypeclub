@@ -111,15 +111,15 @@ class UserTab extends StatelessWidget {
                       padding: const EdgeInsets.symmetric(vertical: 10.0),
                       child: GestureDetector(
                         onTap: () async {
-                          // Navigator.push(
-                          //     context,
-                          //     MaterialPageRoute(
-                          //         builder: (context) =>
-                          //             ChangeNotifierProvider.value(
-                          //               value: user,
-                          //               child: OrdersScreen(),
-                          //             )));
-                          await db.addProduct();
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) =>
+                                      ChangeNotifierProvider.value(
+                                        value: user,
+                                        child: OrdersScreen(),
+                                      )));
+                          // await db.addDesc();
                         },
                         child: Text(
                           "Orders",

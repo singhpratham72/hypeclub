@@ -69,9 +69,11 @@ class ProductCard extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
-                        name,
-                        style: cardText,
+                      Flexible(
+                        child: Text(
+                          name,
+                          style: cardText,
+                        ),
                       ),
                       Text(
                         '₹$oldPrice',

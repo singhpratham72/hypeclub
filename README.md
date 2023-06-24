@@ -2,6 +2,8 @@
 
 Hypeclub is a mobile app built with Flutter, designed as an e-commerce store for shoes. The app provides a wide collection of shoes and kicks, allowing users to explore and purchase their favorite footwear. Hypeclub utilizes Firebase as the backend, including authorization services, and stores its extensive shoe database on Cloud Firestore.
 
+![slide1](https://github.com/singhpratham72/interio/blob/6e8f1d695fcd621ac647644ccf39f175d3812f55/hypeclub.jpg)
+
 ## Features
 
 - Extensive collection of shoes and kicks.
@@ -10,8 +12,6 @@ Hypeclub is a mobile app built with Flutter, designed as an e-commerce store for
 - Add shoes to a shopping cart and proceed to checkout.
 - User authentication and authorization using Firebase.
 - Database hosted on Cloud Firestore for efficient data management.
-
-![slide1](https://github.com/singhpratham72/interio/blob/6e8f1d695fcd621ac647644ccf39f175d3812f55/hypeclub.jpg)
 
 ## Getting Started
 

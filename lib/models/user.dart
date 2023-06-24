@@ -5,7 +5,7 @@ class User with ChangeNotifier {
   DatabaseService db = DatabaseService();
 
   String name, phone, email;
-  List cart, wishlist, orders;
+  List cart, wishlist, orders = [];
   User({
     this.name,
     this.phone,

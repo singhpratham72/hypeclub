@@ -33,7 +33,7 @@ class _ProductSizeState extends State<ProductSize> {
                 height: 42.0,
                 decoration: BoxDecoration(
                   color: _selected == i
-                      ? Theme.of(context).accentColor
+                      ? Theme.of(context).primaryColor
                       : Color(0xFFDCDCDC),
                   borderRadius: BorderRadius.circular(8.0),
                 ),

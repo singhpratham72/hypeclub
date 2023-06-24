@@ -99,7 +99,7 @@ class _HomeTabState extends State<HomeTab> {
                     onChanged: (text) {
                       initiateSearch(text);
                     },
-                    cursorColor: Theme.of(context).accentColor,
+                    cursorColor: Theme.of(context).primaryColor,
                     decoration: InputDecoration(
                         border: InputBorder.none,
                         hintText: 'Search for shoes',
@@ -169,7 +169,7 @@ class _HomeTabState extends State<HomeTab> {
                           Text(
                             'Sneakers',
                             style: headingText.copyWith(
-                                color: Theme.of(context).accentColor,
+                                color: Theme.of(context).primaryColor,
                                 fontSize: 24.0),
                           ),
                           FutureBuilder<QuerySnapshot>(
@@ -226,7 +226,7 @@ class _HomeTabState extends State<HomeTab> {
                           Text(
                             'Sandals',
                             style: headingText.copyWith(
-                                color: Theme.of(context).accentColor,
+                                color: Theme.of(context).primaryColor,
                                 fontSize: 24.0),
                           ),
                           FutureBuilder<QuerySnapshot>(
@@ -283,7 +283,7 @@ class _HomeTabState extends State<HomeTab> {
                           Text(
                             'Formal shoes',
                             style: headingText.copyWith(
-                                color: Theme.of(context).accentColor,
+                                color: Theme.of(context).primaryColor,
                                 fontSize: 24.0),
                           ),
                           FutureBuilder<QuerySnapshot>(
@@ -340,7 +340,7 @@ class _HomeTabState extends State<HomeTab> {
                           Text(
                             'Casual shoes',
                             style: headingText.copyWith(
-                                color: Theme.of(context).accentColor,
+                                color: Theme.of(context).primaryColor,
                                 fontSize: 24.0),
                           ),
                           FutureBuilder<QuerySnapshot>(
@@ -397,7 +397,7 @@ class _HomeTabState extends State<HomeTab> {
                           Text(
                             'Biker boots',
                             style: headingText.copyWith(
-                                color: Theme.of(context).accentColor,
+                                color: Theme.of(context).primaryColor,
                                 fontSize: 24.0),
                           ),
                           FutureBuilder<QuerySnapshot>(

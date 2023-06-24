@@ -64,7 +64,8 @@ class _CheckoutBottomSheetState extends State<CheckoutBottomSheet> {
                   text: TextSpan(
                       text: 'Delivery ',
                       style: headingText.copyWith(
-                          color: Theme.of(context).accentColor, fontSize: 24.0),
+                          color: Theme.of(context).primaryColor,
+                          fontSize: 24.0),
                       children: [
                         TextSpan(
                             text: 'Address',
@@ -80,7 +81,7 @@ class _CheckoutBottomSheetState extends State<CheckoutBottomSheet> {
                   width: MediaQuery.of(context).size.width / 1.5,
                   child: TextField(
                     controller: address,
-                    cursorColor: Theme.of(context).accentColor,
+                    cursorColor: Theme.of(context).primaryColor,
                     keyboardType: TextInputType.name,
                     decoration: InputDecoration(
                       labelText: "Address 1",
@@ -92,7 +93,7 @@ class _CheckoutBottomSheetState extends State<CheckoutBottomSheet> {
                       ),
                       focusedBorder: OutlineInputBorder(
                         borderSide: BorderSide(
-                          color: Theme.of(context).accentColor,
+                          color: Theme.of(context).primaryColor,
                         ),
                         borderRadius: BorderRadius.circular(16.0),
                       ),
@@ -112,7 +113,7 @@ class _CheckoutBottomSheetState extends State<CheckoutBottomSheet> {
                   child: TextField(
                     enabled: address.text.isNotEmpty,
                     controller: city,
-                    cursorColor: Theme.of(context).accentColor,
+                    cursorColor: Theme.of(context).primaryColor,
                     keyboardType: TextInputType.name,
                     decoration: InputDecoration(
                       labelText: "Address 2",
@@ -124,7 +125,7 @@ class _CheckoutBottomSheetState extends State<CheckoutBottomSheet> {
                       ),
                       focusedBorder: OutlineInputBorder(
                         borderSide: BorderSide(
-                          color: Theme.of(context).accentColor,
+                          color: Theme.of(context).primaryColor,
                         ),
                         borderRadius: BorderRadius.circular(16.0),
                       ),
@@ -144,7 +145,7 @@ class _CheckoutBottomSheetState extends State<CheckoutBottomSheet> {
                   child: TextField(
                     controller: pincode,
                     enabled: city.text.isNotEmpty,
-                    cursorColor: Theme.of(context).accentColor,
+                    cursorColor: Theme.of(context).primaryColor,
                     keyboardType: TextInputType.name,
                     decoration: InputDecoration(
                       labelText: "Pin Code",
@@ -156,7 +157,7 @@ class _CheckoutBottomSheetState extends State<CheckoutBottomSheet> {
                       ),
                       focusedBorder: OutlineInputBorder(
                         borderSide: BorderSide(
-                          color: Theme.of(context).accentColor,
+                          color: Theme.of(context).primaryColor,
                         ),
                         borderRadius: BorderRadius.circular(16.0),
                       ),
@@ -190,7 +191,7 @@ class _CheckoutBottomSheetState extends State<CheckoutBottomSheet> {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(12.0),
                       color: address.text.isNotEmpty
-                          ? Theme.of(context).accentColor
+                          ? Theme.of(context).primaryColor
                           : Theme.of(context).disabledColor,
                     ),
                     padding: EdgeInsets.symmetric(vertical: 12.0),
@@ -232,7 +233,8 @@ class _CheckoutBottomSheetState extends State<CheckoutBottomSheet> {
                   text: TextSpan(
                       text: 'Confirm ',
                       style: headingText.copyWith(
-                          color: Theme.of(context).accentColor, fontSize: 24.0),
+                          color: Theme.of(context).primaryColor,
+                          fontSize: 24.0),
                       children: [
                         TextSpan(
                             text: 'and pay.',
@@ -253,7 +255,7 @@ class _CheckoutBottomSheetState extends State<CheckoutBottomSheet> {
                       TextSpan(
                           text: '₹${order.price}.0',
                           style:
-                              TextStyle(color: Theme.of(context).accentColor))
+                              TextStyle(color: Theme.of(context).primaryColor))
                     ]),
               ),
             ),
@@ -324,7 +326,7 @@ class _CheckoutBottomSheetState extends State<CheckoutBottomSheet> {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(12.0),
                       color: address.text.isNotEmpty
-                          ? Theme.of(context).accentColor
+                          ? Theme.of(context).primaryColor
                           : Theme.of(context).disabledColor,
                     ),
                     padding: EdgeInsets.symmetric(vertical: 12.0),

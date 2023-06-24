@@ -1,6 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:provider/provider.dart';
 import 'package:aponline/constants.dart';
 import 'package:aponline/models/user.dart' as userModel;
@@ -52,7 +51,7 @@ class _LandingScreenState extends State<LandingScreen> {
                                         text: 'shoes',
                                         style: TextStyle(
                                             color:
-                                                Theme.of(context).accentColor))
+                                                Theme.of(context).primaryColor))
                                   ]),
                             ),
                           ]),
@@ -75,7 +74,7 @@ class _LandingScreenState extends State<LandingScreen> {
                               ),
                               borderRadius:
                                   BorderRadius.all(Radius.circular(8.0)),
-                              color: Theme.of(context).accentColor),
+                              color: Theme.of(context).primaryColor),
                         ),
                       )
                     ],
@@ -97,7 +96,7 @@ class _LandingScreenState extends State<LandingScreen> {
                               TextSpan(
                                   text: 'wishlist',
                                   style: TextStyle(
-                                      color: Theme.of(context).accentColor))
+                                      color: Theme.of(context).primaryColor))
                             ]),
                       ),
                       GestureDetector(
@@ -119,7 +118,7 @@ class _LandingScreenState extends State<LandingScreen> {
                               ),
                               borderRadius:
                                   BorderRadius.all(Radius.circular(8.0)),
-                              color: Theme.of(context).accentColor),
+                              color: Theme.of(context).primaryColor),
                         ),
                       )
                     ],
@@ -141,7 +140,7 @@ class _LandingScreenState extends State<LandingScreen> {
                               TextSpan(
                                   text: 'cart',
                                   style: TextStyle(
-                                      color: Theme.of(context).accentColor))
+                                      color: Theme.of(context).primaryColor))
                             ]),
                       ),
                       GestureDetector(
@@ -163,7 +162,7 @@ class _LandingScreenState extends State<LandingScreen> {
                               ),
                               borderRadius:
                                   BorderRadius.all(Radius.circular(8.0)),
-                              color: Theme.of(context).accentColor),
+                              color: Theme.of(context).primaryColor),
                         ),
                       )
                     ],
@@ -207,7 +206,7 @@ class _LandingScreenState extends State<LandingScreen> {
             iconSize: 40.0,
             showSelectedLabels: false,
             showUnselectedLabels: false,
-            selectedItemColor: Theme.of(context).accentColor,
+            selectedItemColor: Theme.of(context).primaryColor,
             unselectedItemColor: Theme.of(context).disabledColor,
             items: [
               BottomNavigationBarItem(

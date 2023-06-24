@@ -133,7 +133,7 @@ class ProductCardW extends StatelessWidget {
                           children: [
                             Icon(
                               Icons.signal_cellular_alt,
-                              color: Theme.of(context).accentColor,
+                              color: Theme.of(context).primaryColor,
                             ),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -161,7 +161,7 @@ class ProductCardW extends StatelessWidget {
                           children: [
                             Icon(
                               Icons.timer,
-                              color: Theme.of(context).accentColor,
+                              color: Theme.of(context).primaryColor,
                             ),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -195,7 +195,7 @@ class ProductCardW extends StatelessWidget {
                 icon: Icon(
                   Icons.delete_sharp,
                   size: 32.0,
-                  color: Theme.of(context).accentColor,
+                  color: Theme.of(context).primaryColor,
                 ),
               )
             ],

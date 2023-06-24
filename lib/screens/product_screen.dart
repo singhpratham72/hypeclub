@@ -155,7 +155,7 @@ class _ProductScreenState extends State<ProductScreen> {
                                       children: [
                                         Icon(
                                           Icons.signal_cellular_alt,
-                                          color: Theme.of(context).accentColor,
+                                          color: Theme.of(context).primaryColor,
                                           size: 28.0,
                                         ),
                                         SizedBox(
@@ -188,7 +188,7 @@ class _ProductScreenState extends State<ProductScreen> {
                                       children: [
                                         Icon(
                                           Icons.timer,
-                                          color: Theme.of(context).accentColor,
+                                          color: Theme.of(context).primaryColor,
                                           size: 28.0,
                                         ),
                                         SizedBox(
@@ -221,7 +221,7 @@ class _ProductScreenState extends State<ProductScreen> {
                                       children: [
                                         Icon(
                                           Icons.height,
-                                          color: Theme.of(context).accentColor,
+                                          color: Theme.of(context).primaryColor,
                                           size: 28.0,
                                         ),
                                         SizedBox(
@@ -301,12 +301,12 @@ class _ProductScreenState extends State<ProductScreen> {
                                       padding: EdgeInsets.symmetric(
                                           vertical: 2.0, horizontal: 6.0),
                                       decoration: BoxDecoration(
-                                          color: Theme.of(context).accentColor,
+                                          color: Theme.of(context).primaryColor,
                                           borderRadius:
                                               BorderRadius.circular(8.0),
                                           border: Border.all(
                                               color: Theme.of(context)
-                                                  .accentColor)),
+                                                  .primaryColor)),
                                       child: Row(
                                         children: [
                                           Text(
@@ -430,7 +430,7 @@ class _ProductScreenState extends State<ProductScreen> {
                                   productSaved
                                       ? Icons.favorite
                                       : Icons.favorite_border_outlined,
-                                  color: Theme.of(context).accentColor,
+                                  color: Theme.of(context).primaryColor,
                                   size: 32.0,
                                 ),
                               ),
@@ -454,7 +454,7 @@ class _ProductScreenState extends State<ProductScreen> {
                               width: MediaQuery.of(context).size.width / 1.5,
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(12.0),
-                                color: Theme.of(context).accentColor,
+                                color: Theme.of(context).primaryColor,
                               ),
                               padding: EdgeInsets.symmetric(vertical: 12.0),
                               child: Row(

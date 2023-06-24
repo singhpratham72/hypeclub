@@ -31,9 +31,8 @@ class AuthenticationService {
           email: email, password: password);
       DatabaseService databaseService = DatabaseService();
       await databaseService.addUser(name: name, phone: phone);
-      await _firebaseAuth.currentUser.updateProfile(
-          photoURL:
-              'https://icon-library.com/images/anonymous-person-icon/anonymous-person-icon-18.jpg');
+      await _firebaseAuth.currentUser.updatePhotoURL(
+          'https://icon-library.com/images/anonymous-person-icon/anonymous-person-icon-18.jpg');
       return null;
     } on FirebaseAuthException catch (e) {
       return e.message;
@@ -49,7 +48,7 @@ class AuthenticationService {
           GoogleAuthProvider.credential(
               idToken: googleAuth.idToken, accessToken: googleAuth.accessToken);
       _firebaseAuth.currentUser.linkWithCredential(googleCredentials);
-      _firebaseAuth.currentUser.updateProfile(photoURL: googleUser.photoUrl);
+      _firebaseAuth.currentUser.updatePhotoURL(googleUser.photoUrl);
       return 'Your account has been connected to Google.';
     } catch (e) {
       print(e.toString());

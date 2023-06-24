@@ -65,7 +65,8 @@ class DatabaseService {
   Future<void> addSearchString() async {
     QuerySnapshot products = await productsRef.get();
     products.docs.forEach((product) {
-      String name = product.data()['name'];
+      Map<String, dynamic> data = product.data();
+      String name = data['name'];
       String searchString = name.substring(0, 1);
       productsRef.doc(product.id).update({'searchString': searchString});
       print(searchString);

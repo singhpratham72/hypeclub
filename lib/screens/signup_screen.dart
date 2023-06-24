@@ -28,7 +28,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
               TextButton(
                 child: Text(
                   "Close",
-                  style: TextStyle(color: Theme.of(context).accentColor),
+                  style: TextStyle(color: Theme.of(context).primaryColor),
                 ),
                 onPressed: () {
                   Navigator.pop(context);
@@ -93,7 +93,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   children: [
                     TextSpan(
                         text: 'account.',
-                        style: TextStyle(color: Theme.of(context).accentColor))
+                        style: TextStyle(color: Theme.of(context).primaryColor))
                   ]),
             ),
             SizedBox(
@@ -102,7 +102,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
             TextField(
               controller: _nameController,
               keyboardType: TextInputType.name,
-              cursorColor: Theme.of(context).accentColor,
+              cursorColor: Theme.of(context).primaryColor,
               decoration: InputDecoration(
                 labelText: "Name",
                 filled: true,
@@ -115,7 +115,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 ),
                 focusedBorder: OutlineInputBorder(
                   borderSide: BorderSide(
-                    color: Theme.of(context).accentColor,
+                    color: Theme.of(context).primaryColor,
                   ),
                   borderRadius: BorderRadius.circular(16.0),
                 ),
@@ -127,7 +127,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
             TextField(
               controller: _phoneController,
               keyboardType: TextInputType.phone,
-              cursorColor: Theme.of(context).accentColor,
+              cursorColor: Theme.of(context).primaryColor,
               decoration: InputDecoration(
                 labelText: "Phone",
                 filled: true,
@@ -140,7 +140,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 ),
                 focusedBorder: OutlineInputBorder(
                   borderSide: BorderSide(
-                    color: Theme.of(context).accentColor,
+                    color: Theme.of(context).primaryColor,
                   ),
                   borderRadius: BorderRadius.circular(16.0),
                 ),
@@ -153,7 +153,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
               autocorrect: false,
               controller: _emailController,
               keyboardType: TextInputType.emailAddress,
-              cursorColor: Theme.of(context).accentColor,
+              cursorColor: Theme.of(context).primaryColor,
               decoration: InputDecoration(
                 labelText: "E-mail",
                 filled: true,
@@ -166,7 +166,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 ),
                 focusedBorder: OutlineInputBorder(
                   borderSide: BorderSide(
-                    color: Theme.of(context).accentColor,
+                    color: Theme.of(context).primaryColor,
                   ),
                   borderRadius: BorderRadius.circular(16.0),
                 ),
@@ -178,7 +178,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
             TextField(
               controller: _passwordController,
               obscureText: true,
-              cursorColor: Theme.of(context).accentColor,
+              cursorColor: Theme.of(context).primaryColor,
               decoration: InputDecoration(
                 labelText: "Password",
                 filled: true,
@@ -191,7 +191,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 ),
                 focusedBorder: OutlineInputBorder(
                   borderSide: BorderSide(
-                    color: Theme.of(context).accentColor,
+                    color: Theme.of(context).primaryColor,
                   ),
                   borderRadius: BorderRadius.circular(16.0),
                 ),
@@ -212,7 +212,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       width: MediaQuery.of(context).size.width / 1.6,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(12.0),
-                        color: Theme.of(context).accentColor,
+                        color: Theme.of(context).primaryColor,
                       ),
                       padding: EdgeInsets.symmetric(
                           horizontal: 96.0, vertical: 12.0),
@@ -244,7 +244,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                 text: 'Log in.',
                                 style: TextStyle(
                                     decoration: TextDecoration.underline,
-                                    color: Theme.of(context).accentColor))
+                                    color: Theme.of(context).primaryColor))
                           ]),
                     ),
                   ),

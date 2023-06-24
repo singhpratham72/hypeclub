@@ -63,7 +63,7 @@ class OrderCard extends StatelessWidget {
                         Icon(
                           Icons.call_made_rounded,
                           size: 22.0,
-                          color: Theme.of(context).accentColor,
+                          color: Theme.of(context).primaryColor,
                         )
                       ],
                     ),
@@ -78,7 +78,7 @@ class OrderCard extends StatelessWidget {
                           children: [
                             Icon(
                               Icons.calendar_today_outlined,
-                              color: Theme.of(context).accentColor,
+                              color: Theme.of(context).primaryColor,
                               size: 22.0,
                             ),
                             SizedBox(

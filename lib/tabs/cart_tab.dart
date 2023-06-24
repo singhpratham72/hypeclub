@@ -15,7 +15,7 @@ class CartTab extends StatelessWidget {
   Widget build(BuildContext context) {
     int cartPrice = 0;
     final user = Provider.of<User>(context);
-    if (user.cart.isNotEmpty) {
+    if (user.cart != null && user.cart.isNotEmpty) {
       List<Widget> cards = [];
       for (Map item in user.cart) {
         cards.add(ProductCardC(
@@ -62,7 +62,7 @@ class CartTab extends StatelessWidget {
                         style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 28.0,
-                            color: Theme.of(context).accentColor),
+                            color: Theme.of(context).primaryColor),
                       );
                     }),
                 GestureDetector(
@@ -105,7 +105,7 @@ class CartTab extends StatelessWidget {
                     width: MediaQuery.of(context).size.width / 1.8,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(12.0),
-                      color: Theme.of(context).accentColor,
+                      color: Theme.of(context).primaryColor,
                     ),
                     padding: EdgeInsets.symmetric(vertical: 12.0),
                     child: Row(
@@ -223,7 +223,7 @@ class ProductCardC extends StatelessWidget {
                                 children: [
                                   Icon(
                                     Icons.signal_cellular_alt,
-                                    color: Theme.of(context).accentColor,
+                                    color: Theme.of(context).primaryColor,
                                   ),
                                   Column(
                                     crossAxisAlignment:
@@ -252,7 +252,7 @@ class ProductCardC extends StatelessWidget {
                                 children: [
                                   Icon(
                                     Icons.add_outlined,
-                                    color: Theme.of(context).accentColor,
+                                    color: Theme.of(context).primaryColor,
                                   ),
                                   Column(
                                     crossAxisAlignment:
@@ -287,7 +287,7 @@ class ProductCardC extends StatelessWidget {
                       icon: Icon(
                         Icons.delete_sharp,
                         size: 32.0,
-                        color: Theme.of(context).accentColor,
+                        color: Theme.of(context).primaryColor,
                       ),
                     )
                   ],

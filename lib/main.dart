@@ -30,12 +30,13 @@ class MyApp extends StatelessWidget {
           create: (_) => AuthenticationService(FirebaseAuth.instance),
         ),
         StreamProvider(
+          initialData: null,
           create: (context) =>
               context.read<AuthenticationService>().authStateChanges,
         )
       ],
       child: MaterialApp(
-        title: 'Interio',
+        title: 'Hypeclub',
         debugShowCheckedModeBanner: false,
         routes: {
           '/login': (context) => LoginScreen(),
@@ -43,7 +44,6 @@ class MyApp extends StatelessWidget {
           '/home': (context) => LandingScreen(),
         },
         theme: ThemeData(
-          accentColor: Color(0xFF5B2A86),
           primaryColor: Color(0xFF5B2A86),
           dialogBackgroundColor: Color(0xFFEFEEEE),
           disabledColor: Color(0xFFC1C1C1),

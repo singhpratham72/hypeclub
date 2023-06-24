@@ -31,7 +31,7 @@ class OrdersScreen extends StatelessWidget {
                     width: 28.0,
                     height: 28.0,
                     decoration: BoxDecoration(
-                      color: Theme.of(context).accentColor,
+                      color: Theme.of(context).primaryColor,
                       borderRadius: BorderRadius.all(Radius.circular(8.0)),
                       boxShadow: [
                         BoxShadow(
@@ -55,8 +55,8 @@ class OrdersScreen extends StatelessWidget {
                       children: [
                         TextSpan(
                             text: 'orders',
-                            style:
-                                TextStyle(color: Theme.of(context).accentColor))
+                            style: TextStyle(
+                                color: Theme.of(context).primaryColor))
                       ]),
                 ),
               ],

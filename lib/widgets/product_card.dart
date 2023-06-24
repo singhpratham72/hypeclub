@@ -91,7 +91,7 @@ class ProductCard extends StatelessWidget {
                           Icon(
                             Icons.check_circle_rounded,
                             size: 15.0,
-                            color: Theme.of(context).accentColor,
+                            color: Theme.of(context).primaryColor,
                           )
                         ],
                       )

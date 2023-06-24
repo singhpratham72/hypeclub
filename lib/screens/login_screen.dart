@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
@@ -29,7 +28,7 @@ class _LoginScreenState extends State<LoginScreen> {
               TextButton(
                 child: Text(
                   "Close",
-                  style: TextStyle(color: Theme.of(context).accentColor),
+                  style: TextStyle(color: Theme.of(context).primaryColor),
                 ),
                 onPressed: () {
                   Navigator.pop(context);
@@ -107,7 +106,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       TextSpan(
                           text: 'sign-in.',
                           style:
-                              TextStyle(color: Theme.of(context).accentColor))
+                              TextStyle(color: Theme.of(context).primaryColor))
                     ]),
               ),
               SizedBox(
@@ -116,7 +115,7 @@ class _LoginScreenState extends State<LoginScreen> {
               TextField(
                 autocorrect: false,
                 controller: _emailController,
-                cursorColor: Theme.of(context).accentColor,
+                cursorColor: Theme.of(context).primaryColor,
                 keyboardType: TextInputType.emailAddress,
                 decoration: InputDecoration(
                   labelText: "E-mail",
@@ -130,7 +129,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderSide: BorderSide(
-                      color: Theme.of(context).accentColor,
+                      color: Theme.of(context).primaryColor,
                     ),
                     borderRadius: BorderRadius.circular(16.0),
                   ),
@@ -143,7 +142,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 autocorrect: false,
                 controller: _passwordController,
                 obscureText: true,
-                cursorColor: Theme.of(context).accentColor,
+                cursorColor: Theme.of(context).primaryColor,
                 decoration: InputDecoration(
                   labelText: "Password",
                   filled: true,
@@ -156,7 +155,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderSide: BorderSide(
-                      color: Theme.of(context).accentColor,
+                      color: Theme.of(context).primaryColor,
                     ),
                     borderRadius: BorderRadius.circular(16.0),
                   ),
@@ -177,7 +176,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         width: MediaQuery.of(context).size.width / 1.6,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(12.0),
-                          color: Theme.of(context).accentColor,
+                          color: Theme.of(context).primaryColor,
                         ),
                         padding: EdgeInsets.symmetric(
                             horizontal: 96.0, vertical: 12.0),
@@ -211,7 +210,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             ),
                             Icon(
                               FontAwesomeIcons.google,
-                              color: Theme.of(context).accentColor,
+                              color: Theme.of(context).primaryColor,
                             ),
                           ],
                         ),
@@ -230,7 +229,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                   text: 'Sign up.',
                                   style: TextStyle(
                                       decoration: TextDecoration.underline,
-                                      color: Theme.of(context).accentColor))
+                                      color: Theme.of(context).primaryColor))
                             ]),
                       ),
                     ),
